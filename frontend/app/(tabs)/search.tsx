@@ -156,7 +156,8 @@ export default function SearchScreen() {
             <TouchableOpacity
               style={[
                 styles.voiceButton,
-                { backgroundColor: isRecording ? '#FF3B30' : '#007AFF' }
+                { backgroundColor: isRecording ? '#FF3B30' : '#007AFF' },
+                { display: 'none' }
               ]}
               onPress={handleVoiceInput}
               disabled={isTranscribing}
