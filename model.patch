@@ -1,0 +1,15 @@
+diff --git a/README.md b/README.md
+index 3786c8a..32e2f1a 100644
+--- a/README.md
++++ b/README.md
+@@ -1 +1,9 @@
+-# Here are your Instructions
++# Where I Left Things - On-Device Memory App
++
++A production-ready React Native application that serves as your personal memory for the physical world. Never forget where you kept your passport, keys, or any other items again!
++
++## 🎯 Core Concept
++
++This app answers one question: **"Where did I keep this last time?"**
++
++Unlike reminder apps or note-taking apps, this is a pure memory system powered by on-device AI that works completely offline.
