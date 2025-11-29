@@ -130,7 +130,9 @@ export default function AddScreen() {
                 editable={!isRecording && !isTranscribing}
               />
               <TouchableOpacity
-                style={[styles.voiceButton, { backgroundColor: getVoiceButtonColor('item') }]}
+                style={[styles.voiceButton, { backgroundColor: getVoiceButtonColor('item') },
+                       { display: 'none' }
+                       ]}
                 onPress={() => handleVoiceInput('item')}
                 disabled={isTranscribing || (isRecording && activeField !== 'item')}
               >
@@ -156,7 +158,9 @@ export default function AddScreen() {
                 editable={!isRecording && !isTranscribing}
               />
               <TouchableOpacity
-                style={[styles.voiceButton, { backgroundColor: getVoiceButtonColor('location') }]}
+                style={[styles.voiceButton, { backgroundColor: getVoiceButtonColor('location') },
+                       { display: 'none' }
+                       ]}
                 onPress={() => handleVoiceInput('location')}
                 disabled={isTranscribing || (isRecording && activeField !== 'location')}
               >
@@ -185,7 +189,9 @@ export default function AddScreen() {
                 editable={!isRecording && !isTranscribing}
               />
               <TouchableOpacity
-                style={[styles.voiceButton, styles.voiceButtonTop, { backgroundColor: getVoiceButtonColor('notes') }]}
+                style={[styles.voiceButton, styles.voiceButtonTop, { backgroundColor: getVoiceButtonColor('notes') },
+                       { display: 'none' }
+                       ]}
                 onPress={() => handleVoiceInput('notes')}
                 disabled={isTranscribing || (isRecording && activeField !== 'notes')}
               >
